@@ -1,0 +1,71 @@
+/* Small Device 576px) */
+
+@media screen and (max-width: 576px){
+      .container {
+        padding: 16px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        
+  }
+
+  .menu-icon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-links, .btn-prymary {
+    display: none;
+  }
+}
+
+
+/* Medium Device 576px to 992px */
+
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .container {
+    padding: 16px 50px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .btn-prymary {
+    display: none;
+  }
+    
+}
+
+
+/* Large Device above 992px */
+
+@media screen and (min-width: 993px){
+    .container {
+        padding: 16px 200px;
+    }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  .btn-prymary {
+    display: flex;
+  }
+    
+}

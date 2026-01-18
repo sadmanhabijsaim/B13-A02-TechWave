@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+    background-color: #1A0B2E;
+}
+
+.navbar{
+    background-color: #1A0B2E;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    /* max-height: 92px; */
+    margin: 0 auto;
+    padding: 16px 200px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight:700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo span{
+    background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-prymary{
+    background: linear-gradient(10deg, #F7E93F, #FB09B4, #9100F8);
+    color: #FFFFFF;
+    padding: 12px 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: transform 0.3s;
+}
+
+.btn-prymary:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+
+
+
+
