@@ -209,6 +209,50 @@
         justify-content: center;
     }
 
+    .footer{
+        min-height: auto;
+        padding: 40px 20px;
+        margin-bottom: 0;
+    }
+
+    .footer h1{
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
+
+    .foot-social-links{
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .foot-social-links a{
+        font-size: 1rem;
+        gap: 8px;
+    }
+
+    .foot-social-links a i{
+        width: 18px;
+    }
+
+    .footer-bottom{
+        margin-top: 24px;
+    }
+
+    .footer-bottom p{
+        font-size: 1rem; 
+    }
+    
+    
+    .foot-image img {
+        width: 100%;
+        /* max-width: 440px; */
+        height: 300px;
+        
+    }
+
 }
 
 
@@ -216,59 +260,59 @@
 
 
 @media screen and (min-width: 577px) and (max-width: 992px){
-    .container {
+    .containe{
     padding: 16px 50px;
   }
 
-  .menu-icon {
+  .menu-icon{
     display: none;
   }
 
-  .nav-links {
+  .nav-links{
     display: flex;
     gap: 20px;
   }
 
 
-  .hero {
+  .hero{
     height: 650px;
     padding: 0 30px;
   }
-  .hero-wave {
+  .hero-wave{
     width: 130%;
     top: 48%;
   }
-  .hero-visual {
+  .hero-visual{
     width: 300px;
     height: 300px;
   }
 
-  .hero-circle img {
+  .hero-circle img{
     width: 300px;
   }
 
-  .hero-mic img {
+  .hero-mic img{
     width: 130px;
   }
 
-  .hero-content h1 {
+  .hero-content h1{
     font-size: 3.5rem;
   }
 
-  .hero-content p {
+  .hero-content p{
     font-size: 1.1rem;
     max-width: 500px;
     margin: 0 auto 24px;
   }
 
-  .hero-btns {
+  .hero-btns{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
   }
   .hero-btns .hero-btn, 
-  .hero-btns .btn-2nd {
+  .hero-btns .btn-2nd{
     max-width: 180px;
     padding: 14px 20px;
     font-size: 14px;
@@ -281,22 +325,22 @@
   .about-content h2{
         font-size: 2.8rem;
   }
-  .stats {
+  .stats{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
   }
 
-  .divider-line {
+  .divider-line{
         margin: 60px 0;
   }
 
-  .features {
+  .features{
         padding: 80px 40px;
     }
 
-    .features-grid {
+    .features-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
             "headphone headphone"
@@ -305,39 +349,60 @@
             "book book";
     }
 
-    .features-card.headphone {
+    .features-card.headphone{
         width: 100%;
         height: auto;
     }
 
 
-    .episodes {
+    .episodes{
         padding: 60px 40px;
     }
 
-    .container h2, .host-section h2 {
+    .container h2, .host-section h2{
         font-size: 2.5rem;
     }
 
-    .episodes-items {
+    .episodes-items{
         grid-template-columns:
         gap: 20px;
     }
 
-    .host-card {
+    .host-card{
         flex-direction: row;
         text-align: left;
         padding: 30px;
         gap: 30px;
     }
 
-    .host-profile img {
+    .host-profile img{
         width: 160px;
         height: 160px;
     }
     
-    .host-socials {
+    .host-socials{
         justify-content: flex-start;
+    }
+
+    .footer{
+        padding: 80px 0 40px;
+        min-height: 350px;
+    }
+
+    .footer h1{
+        font-size: 3.5rem;
+        margin-bottom: 28px;
+    }
+
+    .foot-social-links{
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foot-image img{
+        height: 350px;
+        
     }
   
 }
@@ -425,13 +490,13 @@
         min-height: auto;
     }
 
-    .features-container {
+    .features-container{
         width: 100%;
         max-width: 1170px;
         margin: 0 auto;
     }
 
-    .features-grid {
+    .features-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 16px;
@@ -441,48 +506,83 @@
             "exclusive exclusive book";
     }
 
-    .features-card.headphone {
+    .features-card.headphone{
         width: 100%;
         height: 100%;
         max-height: 500px;
     }
 
-    .features-card {
+    .features-card{
         padding: 30px;
     }
 
-    .episodes {
+    .episodes{
         padding: 100px 0;
     }
 
-    .container h2, .host-section h2 {
+    .container h2, .host-section h2{
         font-size: 3rem;
     }
 
-    .episodes-items {
+    .episodes-items{
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
 
-    .episodes-card {
+    .episodes-card{
         max-width: 380px;
         height: 440px;
     }
 
-    .host-card {
+    .host-card{
         flex-direction: row;
         text-align: left;
         padding: 40px;
         gap: 40px;
     }
 
-    .host-profile img {
+    .host-profile img{
         width: 200px;
         height: 200px;
     }
 
-    .host-socials {
+    .host-socials{
         justify-content: flex-start;
+    }
+
+    .footer{
+        padding: 100px 0 50px;
+        min-height: 412px;
+    }
+
+    .foot-image{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 1600px;
+        z-index: 1;
+    }
+    .foot-container{
+        position: relative;
+        z-index: 2;
+    }
+
+    .footer h1{
+        font-size: 4rem;
+        margin-bottom: 32px;
+    }
+
+    .foot-social-links{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 32px;
+    }
+
+    .footer-bottom{
+        margin-top: 40px;
     }
     
 }
