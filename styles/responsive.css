@@ -102,7 +102,7 @@
     .container-about{
       padding: 0px;
     }
-    .about-contant h2{
+    .about-content h2{
       font-size: 2rem;
     }
     .about-content p, .sub{
@@ -158,6 +158,55 @@
 
     .features h2{
         font-size: 2rem;
+    }
+
+    .episodes{
+      padding: 40px 20px;
+    }
+    .episodes-content h3{
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+    }
+    .container h2{
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+    .episodes-items{
+        grid-template-columns: 1fr; 
+        padding: 0 20px;
+    }
+    .episodes-card{
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+
+    .host-section{
+        margin-top: 60px;
+    }
+    .host-section h2{
+      font-size: 2rem;
+    }
+
+    .host-card{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 16px;
+    }
+    .host-profile img{
+        width: 150px;
+        height: 150px;
+    }
+    .host-details h3{
+        font-size: 1.5rem;
+    }
+    .host-details p{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .host-socials{
+        justify-content: center;
     }
 
 }
@@ -260,7 +309,37 @@
         width: 100%;
         height: auto;
     }
+
+
+    .episodes {
+        padding: 60px 40px;
+    }
+
+    .container h2, .host-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .episodes-items {
+        grid-template-columns:
+        gap: 20px;
+    }
+
+    .host-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .host-profile img {
+        width: 160px;
+        height: 160px;
+    }
     
+    .host-socials {
+        justify-content: flex-start;
+    }
+  
 }
 
 
@@ -370,6 +449,40 @@
 
     .features-card {
         padding: 30px;
+    }
+
+    .episodes {
+        padding: 100px 0;
+    }
+
+    .container h2, .host-section h2 {
+        font-size: 3rem;
+    }
+
+    .episodes-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .episodes-card {
+        max-width: 380px;
+        height: 440px;
+    }
+
+    .host-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .host-profile img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .host-socials {
+        justify-content: flex-start;
     }
     
 }
