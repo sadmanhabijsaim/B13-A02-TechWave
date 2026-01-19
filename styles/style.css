@@ -38,8 +38,8 @@ body{
 
 .logo span{
     background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .nav-links{
