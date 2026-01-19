@@ -298,3 +298,133 @@ body{
     margin-top: 10px;
 }
 
+/* Features section */
+
+.headphone{ 
+    grid-area: headphone; 
+}
+.mobile{
+    grid-area: mobile; 
+}
+.global{ 
+    grid-area: global; 
+}
+.exclusive{ 
+    grid-area: exclusive;
+}
+.book{ 
+    grid-area: book; 
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+    grid-template-areas: 
+        "headphone mobile mobile"
+        "headphone global global"
+        "exclusive exclusive book";
+    
+}
+
+.features{
+    background-color: #230E3D;
+    padding: 120px 200px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 1121px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.features h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-card{
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    /* gap: 12px; */
+}
+.features-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box{
+    width: auto;
+    height: auto;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.icon-box i{
+    font-size: 3rem;
+    background: linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.features-card h3{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.features-card p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.features-card.headphone {
+    grid-area: headphone;
+    width: 380px;
+    height: 480px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.features-card {
+    min-height: 225px;
+}
+.features-card .icon-box {
+    margin-bottom: 16px;
+}
+
+.features-card h3 {
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.features-card p {
+    line-height: 1.6;
+}
