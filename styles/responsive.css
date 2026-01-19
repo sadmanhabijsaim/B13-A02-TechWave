@@ -22,6 +22,80 @@
   .nav-links, .btn-prymary {
     display: none;
   }
+
+
+  .hero {
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-wave {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 180%;
+        z-index: 1;
+        pointer-events: none;
+    }
+    .hero-wave img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .btn-prymary{
+        display: none;
+    }
+  .badge-new {
+        top: 4%;
+        right: 4%;
+        font-size: 1rem;
+        padding: 8px 16px;
+        z-index: 10;
+    }
+    .hero-btns {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .hero-btns .hero-btn, 
+    .hero-btns .btn-2nd {
+        flex: 1;
+        max-width: 160px;
+        padding: 12px 8px;
+        font-size: 11px;
+        white-space: nowrap; 
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-visual {
+        position: relative;
+        z-index: 5;
+        width: 240px;
+        height: 240px;
+        margin-top: 20px;
+    }
+    .hero-circle img {
+        width: 100%;
+    }
+
+    .hero-mic img {
+        width: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
 }
 
 
@@ -39,10 +113,56 @@
 
   .nav-links {
     display: flex;
+    gap: 20px;
   }
 
-  .btn-prymary {
+  /* .btn-prymary {
     display: none;
+  } */
+
+  .hero {
+    height: 650px;
+    padding: 0 30px;
+  }
+  .hero-wave {
+    width: 130%;
+    top: 48%;
+  }
+  .hero-visual {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-circle img {
+    width: 300px;
+  }
+
+  .hero-mic img {
+    width: 130px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 24px;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero-btns .hero-btn, 
+  .hero-btns .btn-2nd {
+    max-width: 180px;
+    padding: 14px 20px;
+    font-size: 14px;
+    display: flex;
   }
     
 }
@@ -66,6 +186,63 @@
 
   .btn-prymary {
     display: flex;
+  }
+
+  .hero {
+    height: 760px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .hero-wave {
+    width: 100%;
+    top: 50%;
+    opacity: 1;
+  }
+
+  .hero-visual {
+    width: 380px;
+    height: 380px;
+    margin-bottom: 30px;
+  }
+
+  .hero-circle img {
+    width: 380px;
+  }
+
+  .hero-mic img {
+    width: 160px;
+  }
+
+  .badge-new {
+    top: 20px;
+    right: 20px;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 40px;
+  }
+
+  .hero-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .hero-btns .btn-prymary, 
+  .hero-btns .btn-2nd {
+    min-width: 200px; 
+    padding: 16px 30px;
+    font-size: 1rem;
   }
     
 }
