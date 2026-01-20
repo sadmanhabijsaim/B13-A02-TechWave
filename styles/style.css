@@ -125,10 +125,15 @@ body{
     width: 100%;
     z-index: 1;
 }
-
 .hero-wave img {
     width: 100%;
     object-fit: cover;
+    animation: floatingWave 10s infinite linear;
+}
+@keyframes floatingWave {
+    0%, 100% { transform: translateY(0) rotate(2deg); }
+    33% { transform: translateY(-10px) rotate(2deg); }
+    66% { transform: translateY(5px) rotate(-2deg); }
 }
 
 .hero-visual{
@@ -149,12 +154,29 @@ body{
 .hero-circle img{
     width: 350px;
     height: auto;
+    cursor: pointer;
+    animation: circleRotatePulse 7s infinite linear;
+    transform-origin: center center;
+    display: block;
 }
-
+@keyframes circleRotatePulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+        filter: brightness(1) blur(0px);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.05); 
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        filter: brightness(1) blur(0px);
+    }
+}
 .badge-new{
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
     background-color: #00FF88;
     color: #1A0B2E;
     padding: 8px 16px;
@@ -164,21 +186,42 @@ body{
     z-index: 5;
     box-shadow: 0 0 15px rgba(0, 255, 133, 0.4);
 }
+.badge-new {
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.1); }
+}
 
 .hero-mic {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15%;
+    left: 28%;
     transform: translate(-50%, -50%);
     z-index: 6;
     line-height: 0;
 }
-
 .hero-mic img {
     width: 130px;
     height: auto;
+    cursor: pointer;
+    animation: micPulse 3s infinite ease-in-out;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(145, 0, 248, 0.5));
 }
 
+@keyframes micPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px rgba(186, 131, 225, 0.5));
+    }
+    50% {
+        transform: scale(1.03);
+        filter: drop-shadow(0 0 25px rgba(251, 9, 180, 0.8));
+    }
+}
 .hero-content {
     position: relative;
     z-index: 10;
@@ -430,14 +473,14 @@ body{
 
 /* episodes section */
 
-.episodes {
+.episodes{
     max-width: 1600px;
     margin: 0 auto;
     padding: 100px 0;
     color: #FFFFFF;
 }
 
-.episodes h2 {
+.episodes h2{
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
@@ -452,7 +495,7 @@ body{
     margin: 0 auto;
 }
 
-.episodes-card {
+.episodes-card{
     background: #250D44;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 30px;
@@ -461,14 +504,19 @@ body{
     height: auto;
     overflow: hidden;
     margin: 0 auto;
+    cursor: pointer;
+}
+.episodes-card:hover{
+    transform: translateY(-5px);
 }
 
-.video-container {
+
+.video-container{
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-.video-container iframe {
+.video-container iframe{
     width: 100%;
     height: 100%;
     border: none;
@@ -640,3 +688,4 @@ div h2{
     color: #828282;
     font-size: 1rem;
 }
+
