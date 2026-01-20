@@ -155,7 +155,7 @@ body{
     width: 350px;
     height: auto;
     cursor: pointer;
-    animation: circleRotatePulse 7s infinite linear;
+    animation: circleRotatePulse 3s infinite linear;
     transform-origin: center center;
     display: block;
 }
